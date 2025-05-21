@@ -1,6 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
+  font-family: "Roboto";
+}
+body {
+  background-color: black;
 }
 .banner {
   background-image: url("assets/Images/bg1.jpg");
@@ -8,6 +13,7 @@
   background-position: center;
   height: 100vh;
   position: relative;
+  border-bottom: 8px solid red;
 }
 .banner .box {
   height: 100vh;
@@ -46,4 +52,29 @@ nav div button:hover {
   background-color: rgb(229, 7, 7);
   color: white;
   cursor: pointer;
+}
+.banner_text {
+  height: calc(80% + 60px);
+  width: 40%;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  gap: 20px;
+}
+.banner_text > :first-child {
+  font-weight: 900;
+  font-size: 48px;
+}
+.banner_text > :nth-child(2) {
+  font-weight: 500;
+  font-size: 20px;
+}
+.banner_text > :nth-child(3) {
+  font-weight: 400;
+  font-size: 16px;
 }
