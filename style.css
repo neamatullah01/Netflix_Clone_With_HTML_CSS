@@ -2,7 +2,48 @@
   margin: 0;
   padding: 0;
 }
-main {
+.banner {
   background-image: url("assets/Images/bg1.jpg");
-  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+.banner .box {
+  height: 100vh;
+  width: 100%;
+  opacity: 0.66;
+  position: absolute;
+  top: 0;
+  background-color: black;
+}
+nav {
+  align-content: center;
+  max-width: 75vw;
+  margin: auto;
+  height: 80px;
+}
+nav div img {
+  width: 140px;
+}
+nav div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+nav div button {
+  padding: 8px 18px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: medium;
+  color: white;
+  border: 0px;
+  background-color: red;
+}
+nav div button:hover {
+  background-color: rgb(229, 7, 7);
+  color: white;
+  cursor: pointer;
 }
